@@ -1,0 +1,19 @@
+{
+    "name": "homework2",
+    "description": "Geekhub Advanced PHP homework 2",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Zhurilo",
+            "email": "fumus.27@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "php": ">=5.5.0",
+      "fzaninotto/faker": "^1.5",
+      "adamwathan/form": "^0.8.0",
+      "egulias/email-validator": "~1.2"
+  }
+}
