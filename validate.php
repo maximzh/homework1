@@ -22,8 +22,8 @@ if (isset($_POST['email']) && isset($_POST['name'])) {
         echo "<strong>$email</strong>" . ' is seems to be a valid email address';
     } else {
         if ($validator->hasWarnings()) {
-            echo 'Warning! ' . "<strong>$email</strong>" . ' has unusual/deprecated features (result code ' . var_export($validator->getWarnings(),
-                    true) . ')';
+            echo var_export($validator->getWarnings(),
+                                true) . 'Warning! ' . "<strong>$email</strong>" . ' has unusual/deprecated features (result code ' . ')';
         } else {
             echo "<strong>$email</strong>" . ' is not a valid email address (result code ' . $validator->getError() . ')';
         }
