@@ -27,5 +27,6 @@ echo $builder->submit('Sign Up');
 $faker = Faker\Factory::create();
 
 echo "<br /><br />Contact us : " . "<br /><br />";
-echo "$faker->email<br /> Phone 1: $faker->phoneNumber <br />";
+echo "$faker->email<br />$faker->email<br />";
+echo "Phone 1: $faker->phoneNumber <br />Phone 2: $faker->phoneNumber <br />";
 echo $faker->address . "<br /><br />";
